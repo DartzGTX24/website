@@ -78,6 +78,8 @@ body {
     display: flex;
     justify-content: center; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
+    display: flex;
+    flex-direction: column;
     max-width: 1200px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     padding: 0 20px; /* Añade relleno a los lados del contenedor */
@@ -99,8 +101,7 @@ body {
 }
 
 .video {
-    flex: 1; /* Permite que el video ocupe todo el espacio disponible */
-    max-width: 600px; /* Ancho máximo del video */
+    
     margin-top: 20px; /* Espaciado superior del video */
 }
 
