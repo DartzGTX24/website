@@ -394,7 +394,11 @@ footer .contact-info a {
         opacity: 1;
     }
 }
-
+@media screen and (max-width: 375px) {
+    .custom-container {
+        flex-direction: column-reverse; /* Cambiar la dirección de los elementos en dispositivos móviles */
+    }
+}
 @media screen and (max-width: 768px) {
     .nav_links {
         display: none;
