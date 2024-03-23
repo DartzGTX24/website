@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+/*.colores{
+    --azul-oscuro: #24135F;
+    --rosa: #DA1884;
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+/*===============================MENU DE NAVEGACION=======================================*/
+.container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flujo de los elementos a vertical */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    background-color: #24135F;
+    height: 150px; /* Ajusta la altura del contenedor según sea necesario */
+}
+
+.logo {
+    position: relative; /* Permite posicionar el logo de manera absoluta */
+    margin-bottom: 20px; /* Espacio entre el logo y la navegación */
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    transition: filter 0.3s; /* Añade una transición suave al cambio de color */
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos de la navegación */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto del enlace */
+    font-weight: bold; /* Estilo de fuente negrita */
+    transition: color 0.3s; /* Añade una transición suave al cambio de color */
+}
+
+.nav ul li a:hover {
+    color: #ff006a; /* Cambia el color del texto del enlace al pasar el mouse */
+}
+
+
+/*===============================MENU DE NAVEGACION=======================================*/
+/*===============================WELCOME==================================================*/
+.welcome {
+    background-image: url(../Imges/Fondo1.jpg); /* Reemplaza 'ruta/a/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 100px 0; /* Ajusta el espaciado según sea necesario */
+    text-align: center; /* Centra el contenido horizontalmente */
+    color: #fff; /* Color del texto */
+}
+
+.custom-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Añade relleno a los lados del contenedor */
+}
+
+.text {
+    flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+    padding-right: 20px; /* Espaciado a la derecha del texto */
+}
+
+.text h1 {
+    font-size: 48px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+.text p {
+    font-size: 24px; /* Tamaño de fuente del párrafo */
+    margin-bottom: 10px; /* Espaciado inferior del párrafo */
+}
+
+.video {
+    flex: 1; /* Permite que el video ocupe todo el espacio disponible */
+    max-width: 600px; /* Ancho máximo del video */
+    margin-top: 20px; /* Espaciado superior del video */
+}
+
+video {
+    width: 100%; /* Ajusta el ancho del video al 100% */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    border-radius: 10px; /* Agrega bordes redondeados al video */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Agrega una sombra al video */
+}
+
+/*===============================WELCOME==================================================*/
+/*===============================SLIDER===================================================*/
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider h2{
+    text-align: center;
+}
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+/*===============================SLIDER===================================================*/
+/*===============================SERVICIOS================================================*/
+.gallery {
+    text-align: center;
+    background-image: url(../Imges/card/fondo-4.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Ajusta el espaciado según sea necesario */
+    color: #ffffff;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio {
+    width: calc(33.33% - 135px); /* El ancho es el 33.33% menos los márgenes */
+    margin: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: scale(1.1);
+}
+
+.servicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #DA1884;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #DA1884;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*===============================SERVICIOS================================================*/
+/*===============================FORMULARIO===============================================*/
+.formulario {
+    text-align: center;
+    background-image: url(../Imges/Fondo2.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10%; /* Ajusta el espaciado según sea necesario */
+    color: rgb(0, 0, 0);
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#contacto-form {
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Máximo ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #DA1884; /* Borde blanco */
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #24135F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #24135F;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/*===============================FORMULARIO===============================================*/
+.separator {
+    text-align: center; /* Centra horizontalmente la imagen */
+    margin: -8px 0; /* Espacio entre el separador y otros elementos */
+}
+
+.separator img {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+/*==========================PREGUNTAS FRECUENTES==========================================*/
+.preguntas-frecuentes {
+    text-align: left;
+    background-image: url(../Imges/Fondo6.webp); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen de fondo */
+    padding: 30px; /* Ajustar el relleno para que no esté demasiado cerca del borde */
+    
+}
+
+.preguntas-frecuentes h2 {
+    color: #ffffff; /* Color blanco para el título h2 */
+    margin-bottom: 20px; /* Espacio entre el título y las preguntas */
+}
+
+.pregunta {
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo de las preguntas */
+    border-radius: 10px; /* Añadir bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave */
+}
+
+.pregunta h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.pregunta p {
+    max-height: 0;
+    overflow: hidden;
+    
+    transition: max-height 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); /* Animación suave con curva de velocidad personalizada */
+}
+
+.pregunta.activa p {
+    max-height: 200px; /* Altura máxima de la respuesta */
+    transition: max-height 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); /* Animación suave con curva de velocidad personalizada */
+}
+
+.pregunta.activa {
+    background-color: #f0f0f0; /* Cambio de color de fondo al expandir la pregunta */
+}
+
+
+/*==========================PREGUNTAS FRECUENTES==========================================*/
+/*===============================FOOTER===================================================*/
+footer {
+    background-color: #24135F; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilo para los íconos de redes sociales */
+.redes-sociales {
+    margin-top: 20px; /* Espacio superior */
+}
+
+.icono-red-social {
+    display: inline-block; /* Mostrar en línea */
+    margin: 0 10px; /* Margen entre íconos */
+}
+
+/* Estilo para las imágenes de los íconos */
+.icono-red-social img {
+    width: 40px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+}
+
+/* Efecto al pasar el mouse sobre los íconos */
+.icono-red-social:hover img {
+    opacity: 0.7; /* Opacidad reducida */
+}
+
+/* Estilo para el texto de derechos de autor */
+footer .copyright {
+    margin-top: 20px; /* Espacio superior */
+    color: #ffffff; /* Color del texto de derechos de autor */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilo para la información de contacto */
+footer .contact-info {
+    margin-top: 20px; /* Espacio superior */
+    color: #00a0f7; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilo para los enlaces de la información de contacto */
+footer .contact-info a {
+    color: #ffffff; /* Color del texto de enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin-left: 5px; /* Margen izquierdo para separar el texto del enlace */
+}
+/*===============================FOOTER===================================================*/
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7)); /* Corregido el valor de transform */
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #24135F;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+
+    .nav__menu,
+    .nav__close {
+        display: block;
+    }
+
+    .nav__item {
+        margin: 10px 0;
+    }
+    
+    .slider {
+        width: 90%; /* Reducir el ancho en dispositivos más pequeños */
+    }
+
+    .slide {
+        width: 200px; /* Reducir el ancho de los slides */
+    }
+    /*Ajustes de main*/
+    
+}
